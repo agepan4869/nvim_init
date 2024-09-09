@@ -8,7 +8,7 @@ vim.g.python3_host_prog = "C:\\Users\\渡邊唯人(ecbeing)\\.pyenv\\pyenv-win\\
 opt.number = true
 
 -- vimhelpの表示言語
-opt.helplang = 'ja', 'en'
+opt.helplang = {'ja', 'en'}
 
 -- 選択行の表示
 opt.cursorline = true
@@ -23,15 +23,15 @@ opt.smartindent = true
 -- encoding
 opt.encoding = 'utf-8'
 opt.fileencoding = 'utf-8'
-opt.fileencodings = 'ucs-boms','utf-8','enc-jp','cp932'
-opt.fileformats = 'dos', 'unix','mac'
+opt.fileencodings = {'ucs-boms','utf-8','enc-jp','cp932'}
+opt.fileformats = {'dos', 'unix','mac'}
 
 -- 曖昧文字幅の固定
 opt.ambiwidth = 'double'
 
 -- 制御文字を表示
 opt.list = true
-opt.listchars = 'tab:>-', 'trail:*', 'nbsp:+'
+opt.listchars = {tab = '>-', trail = '*', nbsp = '+'}
 
 -- ビープ音を視覚表示に変更
 opt.visualbell = true
@@ -56,7 +56,7 @@ opt.laststatus = 2
 -- opt.clipboard = 'unnamedplus'
 
 -- バックスペースの設定
-opt.backspace = 'indent', 'eol', 'start'
+opt.backspace = {'indent', 'eol', 'start'}
 
 -- 背景色の設定
 opt.background = dark
